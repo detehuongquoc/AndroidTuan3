@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgPhone"
+        android:layout_width="152dp"
+        android:layout_height="206dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vsmart_live_xanh_1" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="202dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:text="Điện Thoại Vsmart Joy 3 Hàng chính hãng"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintStart_toEndOf="@+id/imgPhone"
+        app:layout_constraintTop_toTopOf="@+id/imgPhone" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Màu:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="xanh"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cung cấp bởi "
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiki Tradding"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1.790.000 đ"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="497dp"
+        android:background="#C4C4C4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPurple"
+        android:layout_width="106dp"
+        android:layout_height="97dp"
+        android:backgroundTint="#234896"
+        android:textColor="#C5F1FB"
+        app:layout_constraintEnd_toEndOf="@+id/btnDen"
+        app:layout_constraintStart_toStartOf="@+id/btnDen"
+        app:layout_constraintTop_toBottomOf="@+id/btnDen" />
+
+    <Button
+        android:id="@+id/btnDen"
+        android:layout_width="106dp"
+        android:layout_height="97dp"
+        android:backgroundTint="#000000"
+        android:textColor="#C5F1FB"
+        app:layout_constraintEnd_toEndOf="@+id/btnDo"
+        app:layout_constraintStart_toStartOf="@+id/btnDo"
+        app:layout_constraintTop_toBottomOf="@+id/btnDo" />
+
+    <Button
+        android:id="@+id/btnDo"
+        android:layout_width="106dp"
+        android:layout_height="97dp"
+        android:backgroundTint="#F30D0D"
+        android:textColor="#C5F1FB"
+        app:layout_constraintEnd_toEndOf="@+id/btnXanh"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnXanh"
+        app:layout_constraintTop_toBottomOf="@+id/btnXanh" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Chọn một màu bên dưới:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <Button
+        android:id="@+id/btnXanh"
+        android:layout_width="106dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#C5F1FB"
+        android:textColor="#C5F1FB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <Button
+        android:id="@+id/btnXong"
+        android:layout_width="365dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#941952E2"
+        android:text="XONG"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:cornerRadius="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPurple"
+        app:strokeColor="#F41313"
+        app:strokeWidth="1sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
