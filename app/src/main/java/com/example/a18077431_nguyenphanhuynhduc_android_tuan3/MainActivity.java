@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
         btnXong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,Detai_Infomation.class);
+                Intent intent = new Intent(MainActivity.this, activity_detai__infomation.class);
                 for (Phone phone : list) {
                     if (phone.getColor() == kq){
                         Bundle bundle = new Bundle();
